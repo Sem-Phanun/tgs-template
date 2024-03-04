@@ -29,12 +29,17 @@
 }
 
 .header-section .navbar-section .logo-box {
+    width: 50px;
+    margin-top: 1rem;
     margin-right: 3rem;
 }
 
 .header-section .navbar-section .logo-box a {
     font-size: 3rem;
     color: #000;
+}
+.header-section .navbar-section .logo-box a img {
+    width: 100%;
 }
 
 .header-section .navbar-section .menu-list {
@@ -439,8 +444,12 @@
     justify-content: space-around;
 }
 .footer-section .footer-wrapper .footer-logo li{
+    width: 200px;
     font-size: 4rem;
     color: #fff;
+}
+.footer-section .footer-wrapper .footer-logo li a img {
+    width: 100%;
 }
 
 .footer-section .footer-wrapper .quick-link h4 {
