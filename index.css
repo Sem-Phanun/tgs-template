@@ -8,11 +8,12 @@
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
 }
-
+.header-section .header-nav {
+    background-color: #DB0000;
+}
 .header-section .header-nav ul {
     display: flex;
     justify-content: start;
-    background-color: #DB0000;
     padding: .6rem;
 }
 
@@ -136,7 +137,7 @@
 
 .content-section .content-wrapper {
     display: flex;
-    margin-top: 1rem;
+    margin-top: 4rem;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -166,8 +167,8 @@
 /* call action */
 .call-action {
     position: relative;
-    top: 100px;
-    padding: 2rem;
+    top: 60px;
+    padding: 1rem;
     display: flex;
     justify-content: center;
     width: 90%;
@@ -179,6 +180,7 @@
     background-color: #ffd60a;
 }
 .call-action .experience h4 {
+    text-align: center;
     font-size: 3rem;
     font-weight: bold;
 }
@@ -186,13 +188,17 @@
 .call-action .call-box {
     width: 60vw;
     background-color: #DB0000;
+}
+.call-action .call-box .bg-box {
     background-image: url("./phone.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: right;
+    padding: 10px;
+    margin: 14px 10px 10px 10px;
+
 }
 .call-action .call-box h4 {
-    margin-top: 3rem;
     text-align: center;
     font-size: 2rem;
     color: #fff;
@@ -202,11 +208,11 @@
 
 .service-section {
     background-color: #1b263b;
-    height: 520px;
+    height: 500px;
 }
 
 .service-section .service-wrapper {
-    padding: 6rem;
+    padding: 5rem;
 }
 
 .service-section .service-wrapper .service-title .title {
@@ -214,20 +220,20 @@
     color: #fff;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .service-section .service-wrapper .content-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 90vw;
 }
 .service-section .service-wrapper .content-wrapper .image-box {
     width: 300px;
     height: 300px;
     margin-right: 2rem;
     margin-top: 5rem;
-    background-color: #ffd60a;
     position: relative;
 }
 
@@ -302,7 +308,7 @@
 }
 .about-wrapper .box-wrapper .box-content .about-title.right-title p {
     text-align: right;
-    text-align: justify;
+    letter-spacing: 1px;
 }
 .about-wrapper .box-wrapper .box-content.right-box .image-block {
     margin-left: 13rem;
@@ -377,7 +383,7 @@
 
 /* contqact section */
 .contact-section {
-    margin-top: 3rem;
+    margin-top: 1rem;
     padding: 2rem;
 }
 .contact-section .contact-wrapper {
@@ -464,3 +470,69 @@
     margin-top: 10px;
     color: #fff;
 }
+
+@media (max-width: 768px){
+    .header-section .navbar-section {
+        padding: 10px 9%;
+    } 
+    .hero-section .hero-wrapper .article-box {
+        margin-top: 3rem;
+    }
+    .hero-section .hero-wrapper .image-section {
+        width: 200px;
+        height: 200px;
+        margin: 0;
+        margin-top: 4rem;
+    } 
+
+    .content-section .content-wrapper .content-title {
+        margin-left: 10px;
+    }
+
+    .content-section .content-wrapper .content-title .title {
+        font-size: 1rem;
+    }
+    .content-section .content-wrapper .content-title .content-text {
+        font-size: 14px;
+    }
+
+    /* call action */
+    .call-action .experience h4 {
+        font-size: 2rem;
+    }
+    .call-action .call-box .bg-box h4 {
+        letter-spacing: 4px;
+    }
+    .service-section .service-wrapper .service-title {
+        margin-top: -1rem;
+    }
+
+
+    .about-section {
+        margin-top: 54rem;
+    }
+
+    .about-section .about-wrapper .box-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-section .about-wrapper .box-wrapper .box-content.right-box {
+        margin-right: 26rem;
+    }
+    .about-section .about-wrapper .box-wrapper .box-content.right-box .right-title {
+        margin-left: 20rem;
+    }
+    .about-section .about-wrapper .box-wrapper .box-content.right-box .right-title p {
+        letter-spacing: normal;
+    }
+
+
+    .gallery-section .icons .left {
+        margin-right: 1rem;
+    }
+    .gallery-section .icons .right {
+        margin-left: 44rem;
+    }
+    
+}   
